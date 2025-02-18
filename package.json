@@ -216,7 +216,9 @@
     "yallist": "^3.1.1",
     "yocto-queue": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
