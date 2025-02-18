@@ -1,15 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
-    <div>
-      {/* <Header /> */}
-      <Hero />
-      {/* <Footer /> */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<AboutMe />} />
+      </Routes>
+    </Router>
   );
 }
 
